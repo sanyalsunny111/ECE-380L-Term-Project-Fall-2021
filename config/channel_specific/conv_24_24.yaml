@@ -1,0 +1,11 @@
+# 24x24 Convolutional model configuration.
+model:
+  name: 'ConvolutionalModel'
+  parameters:
+    filters: 24
+    kernel_size: 24
+    layers: 5
+    units: 600
+    activation: 'tanh'
+    dropout: 0
+    num_pred_tones: 234

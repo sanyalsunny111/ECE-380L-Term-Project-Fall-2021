@@ -1,0 +1,50 @@
+Remaining tasks:
+    - Presentation
+        [x] Create introduction slides (2)
+        [x] Create background information slides (1)
+        [x] Create dataset slides (1)
+        [x] Create data preprocessing slides (1)
+        [x] Create data analysis slides (1)
+        [x] Create feature engineering slides (2)
+        [x] Create feature extraction slides (PCA) (1)
+        [x] Create model architecture slides (fully connected and convolutional model) (2)
+        [x] Create model comparison slides (naive fully connected vs feature engineered/extracted fully connected and
+            convolutional models) (2)
+        [x] Create conclusion slide (1)
+    - Data preprocessing and analysis
+        [x] Flatten real-world dataset
+        [x] Subsample real-world dataset by 10x
+        [x] Modify `train.py` to load all data into memory and perform transformations as needed
+        - Generate plots for data analysis slides
+            [ ] Constellation diagrams of RX and TX symbols (corrected and uncorrected)
+            [x] Magnitude and phase of channel response
+            [x] PCA of engineered and non-engineered data
+    - Model design
+        [x] Design fully connected model (done in TF)
+        [x] Design convolutional model (done in TF)
+    - Model training and hyper-parameter search
+        - Train model on synthetic dataset
+            [ ] Fully connected without feature engineering or feature extraction
+            [x] Fully connected with feature engineering but no feature extraction
+            [x] Fully connected with feature engineering and feature extraction
+            [x] Convolutional with feature engineering
+        - Do the same in the (magnitude, phase) space instead of (real, imaginary) space
+            [ ] Fully connected without feature engineering or feature extraction
+            [ ] Fully connected with feature engineering but no feature extraction
+            [ ] Fully connected with feature engineering and feature extraction
+            [ ] Convolutional with feature engineering
+    - Model evaluation
+        [x] Flatten and process the per-SNR synthetic datasets for use in BER curve creation
+        [x] Update BER curve code to generate curves with the new models
+        - Evaluate models trained on synthetic dataset
+            [ ] Fully connected without feature engineering or feature extraction
+            [x] Fully connected with feature engineering but no feature extraction
+            [x] Fully connected with feature engineering and feature extraction
+            [x] Convolutional with feature engineering
+        - Do the same in the (magnitude, phase) space instead of (real, imaginary) space
+            [ ] Fully connected without feature engineering or feature extraction
+            [ ] Fully connected with feature engineering but no feature extraction
+            [ ] Fully connected with feature engineering and feature extraction
+            [ ] Convolutional with feature engineering
+    - Misc
+        [ ] Look into using Optuna for hyper-parameter tuning

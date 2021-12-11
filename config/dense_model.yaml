@@ -1,0 +1,10 @@
+# Default configuration for DenseModel.
+model:
+  name: 'DenseModel'
+  parameters:
+    layers: 5
+    units: 600
+    activation: 'tanh'
+    dropout: 0
+    num_pred_tones: 1
+    tone_start: 117
